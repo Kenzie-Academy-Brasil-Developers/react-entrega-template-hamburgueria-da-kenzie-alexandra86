@@ -7,7 +7,7 @@ export const StyledMain = styled.main`
   width: 100%;
 
   div {
-    margin-top: 1.8125rem;
+    margin-top: 1.25rem;
     display: flex;
     gap: 4.0625rem;
   }

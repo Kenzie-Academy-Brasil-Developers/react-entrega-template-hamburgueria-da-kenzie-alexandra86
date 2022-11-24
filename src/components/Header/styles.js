@@ -13,7 +13,7 @@ export const StyledHeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem;
+  padding: 0rem 0.6rem;
 
   @media (max-width: 34.375rem) {
     flex-direction: column;
@@ -63,5 +63,11 @@ export const StyledForm = styled.form`
     font-family: "Inter", sans-serif;
     border: 0.125rem solid #27ae60;
     cursor: pointer;
+  }
+  button:hover{
+  cursor:pointer;
+  border: 0.125rem solid #E0E0E0;
+  color:#828282;
+  background-color:#E0E0E0;
   }
 `;

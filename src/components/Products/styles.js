@@ -9,7 +9,7 @@ export const StyleProduct = styled.li`
   border-radius: 0.3125rem;
   display: flex;
   padding-bottom: 23px;
-
+  
   img {
     padding: 15.12px 71px 0px 52px;
   }
@@ -52,4 +52,17 @@ export const StyleProduct = styled.li`
     border: 0.125rem solid #27ae60;
     cursor: pointer;
   }
+:hover{
+  border:0.125rem solid #333333;
+
+}
+
+button:hover{
+  cursor:pointer;
+  border: 0.125rem solid #E0E0E0;
+  color:#828282;
+  background-color:#E0E0E0;
+
+}
+
 `;
