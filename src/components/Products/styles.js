@@ -18,7 +18,10 @@ export const StyleProduct = styled.li`
     width: 100%;
     height: 10.1875rem;
     margin: 0rem;
-    padding-left: 20px;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
   }
   h2 {
     font-family: "Inter", sans-serif;

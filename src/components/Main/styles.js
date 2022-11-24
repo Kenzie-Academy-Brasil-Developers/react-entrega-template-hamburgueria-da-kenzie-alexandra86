@@ -8,6 +8,8 @@ export const StyledMain = styled.main`
 
   div {
     margin-top: 1.8125rem;
+    display: flex;
+    gap: 4.0625rem;
   }
   @media (max-width: 34.375rem) {
     margin-top: 0.875rem;

@@ -7,4 +7,7 @@ export const StyleUl = styled.ul`
   background-color: #ffffff;
   list-style: none;
   padding: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
 `;

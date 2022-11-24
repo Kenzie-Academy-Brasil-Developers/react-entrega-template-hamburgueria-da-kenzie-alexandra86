@@ -28,16 +28,17 @@ export const StyledForm = styled.form`
   width: 100%;
   height: 3.75rem;
   border-radius: 0.5rem;
-  padding: 0rem 0.625rem;
+  padding: 0rem 1.25rem;
   border: 0.125rem solid #e0e0e0;
 
   input {
     outline: none;
     border: none;
-    margin-right: 3.125rem;
+    margin-right: 10px;
     font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
+    padding: 0rem 0.15625rem;
   }
 
   :hover {
