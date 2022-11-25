@@ -3,15 +3,13 @@ import imgLogo from "../../img/Logo.svg";
 import { StyledHeader, StyledHeaderDiv, StyledForm } from "./styles.js";
 
 
-export function Header() {
-  // const [search, setSearch] = useState ("")
- 
+export function Header({searchProds, setSearchProds}) {
 
-  // const filteredProducts = !search ? products : products.filter(element => element.name.toLowerCase().includes(search.toLowerCase))
-  // value={search} onChange={showProducts}
-//   function showProducts(event){
-//  setSearch(event.target.value)
-//   }
+function PreventSearch(event){
+
+  event.preventDefault()
+}
+
   return (
     <StyledHeader>
       <header>
@@ -19,8 +17,10 @@ export function Header() {
           <StyledHeaderDiv>
             <img src={imgLogo} alt="Logo Burguer Kenzie" />
             <StyledForm>
-              <form>
-                <input type="text" placeholder="Digitar Pesquisa" className="inputSearch" />
+              <form onSubmit={PreventSearch}>
+                <input value={searchProds} 
+                onChange={(event)=> setSearchProds(event.target.value)}
+                type="text" placeholder="Digitar Pesquisa" className="inputSearch" />
                 <button type="submit">Pesquisar</button>
               </form>
             </StyledForm>

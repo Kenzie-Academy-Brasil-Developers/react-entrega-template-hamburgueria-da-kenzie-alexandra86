@@ -45,6 +45,7 @@ export const StyledAsyde = styled.aside`
     font-size: 0.875rem;
     font-weight: 400;
     color: #828282;
+    margin-top: 1rem;
   
   }
   .total{
