@@ -9,7 +9,7 @@ export const StyledMain = styled.main`
   div {
     margin-top: 1.25rem;
     display: flex;
-    gap: 4.0625rem;
+    gap: 4.375rem;
   }
   @media (max-width: 34.375rem) {
     margin-top: 0.875rem;

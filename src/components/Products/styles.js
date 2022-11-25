@@ -12,7 +12,10 @@ export const StyleProduct = styled.li`
   
   img {
     padding: 15.12px 71px 0px 52px;
+    width: 19.375rem;
+    height: 10.75rem;
   }
+  
   div {
     max-width: 16.375rem;
     width: 100%;
@@ -59,10 +62,9 @@ export const StyleProduct = styled.li`
 
 button:hover{
   cursor:pointer;
-  border: 0.125rem solid #E0E0E0;
-  color:#828282;
-  background-color:#E0E0E0;
-
-}
+  border: 0.125rem solid #93D7AF;
+  color:#FFFFFF;
+  background-color:#93D7AF;
+  }
 
 `;

@@ -31,7 +31,7 @@ export const StyledForm = styled.form`
   padding: 0rem 1.25rem;
   border: 0.125rem solid #e0e0e0;
 
-  input {
+  .inputSearch {
     outline: none;
     border: none;
     margin-right: 10px;
@@ -44,10 +44,11 @@ export const StyledForm = styled.form`
   :hover {
     border: 0.125rem solid #333333;
   }
-  ::placeholder {
+  .inputSearch::placeholder {
     font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
+    border:none;
   }
   :focus {
     border: 0.125rem solid #333333;
@@ -66,8 +67,8 @@ export const StyledForm = styled.form`
   }
   button:hover{
   cursor:pointer;
-  border: 0.125rem solid #E0E0E0;
-  color:#828282;
-  background-color:#E0E0E0;
+  border: 0.125rem solid #93D7AF;
+  color:#FFFFFF;
+  background-color:#93D7AF;
   }
 `;
