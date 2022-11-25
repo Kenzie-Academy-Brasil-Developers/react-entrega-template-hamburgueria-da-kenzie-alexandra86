@@ -1,40 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { api } from "../../services/axiosClient.js";
 import { ProductsList } from "../ProductsList/index.jsx";
 import { StyledMain } from "./style.js";
+import { useState } from "react";
 import { Product } from "../Products/index.jsx";
-import { Cart } from "../Cart/index.jsx";
-import { useState, useEffect } from "react";
-import {api} from "../../lib/axiosClient.js"
+import{CartAside} from "../Cart"
+
+
+
+
 
 
 export function MainProducts() {
-  const [products, setProducts] = useState([]);
+  
+  const [prods, setProds] = useState([])
 
   useEffect(()=>{
-    async function GetProducts(){
+
+    async function getProduct(){
       try{
-      
-      const response = await api.get("/products")
-      setProducts(response.data)
-      
-      
-      }catch(error){
-          console.log(error)
+  const response = await api.get("/products")
+  setProds(response.data)
+      }catch(err){
+        console.log(err)
       }
-      }
-     GetProducts()
-  }, [])
-  
+      
+    }
+getProduct()
+  },[])
+
   return (
     <StyledMain>
       <main>
         <div>
           <ProductsList>
             {
-              products.map(element=> <Product element={element} key={element.id}/>)
+              prods.map(elem => <Product key={elem.id} element={elem}/>)
             }
           </ProductsList>
-          <Cart products={products} />
+         <CartAside prods={prods}/>
         </div>
       </main>
     </StyledMain>

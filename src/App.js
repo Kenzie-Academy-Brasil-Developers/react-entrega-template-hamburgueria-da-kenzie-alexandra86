@@ -1,6 +1,6 @@
 import "./App.css";
 import { Header } from "./components/Header";
-import{MainProducts} from "./components/MainProducts"
+import {MainProducts} from "./components/MainProducts"
 
 
 
