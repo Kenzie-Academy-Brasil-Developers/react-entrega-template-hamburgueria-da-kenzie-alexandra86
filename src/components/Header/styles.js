@@ -71,4 +71,22 @@ export const StyledForm = styled.form`
   color:#FFFFFF;
   background-color:#93D7AF;
   }
-`;
+
+  @media (max-width: 34.375rem) {
+
+  .inputSearch{
+    outline: none;
+    border: none;
+    width: 62%;
+    margin-right:0;
+  }
+  width: 106%;
+    height: 3.8125rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+`

@@ -32,7 +32,7 @@ getProduct()
   return (
     <StyledMain>
       <main>
-        <div>
+        <div className="divMain">
           <ProductsList>
             {
               prods.map(elem => <Product key={elem.id} element={elem}/>)

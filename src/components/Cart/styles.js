@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledAsyde = styled.aside`
-  max-width: 24rem;
-    width: 100%;
+  max-width: 22.8125rem;
+  width: 100%;
     height: 33.125rem;
-    padding: 1.0625rem 0rem 1.125rem 1.25rem;
+    
 
   .divTitleCart {
     max-width: 24rem;
@@ -23,7 +23,7 @@ export const StyledAsyde = styled.aside`
     color: #FFFFFF;
   }
   .areaDivDefault{
-    max-width: 24rem;
+    max-width: 22.8125rem;
     width: 100%;
     height: 9.875rem;
     background-color:#F5F5F5;
@@ -94,5 +94,9 @@ export const StyledAsyde = styled.aside`
     background-color: #828282;
     border: 0.125rem solid #828282;
     color:#E0E0E0;
- 
+  }
+  @media (max-width: 34.375rem) {
+    padding:0;
+  }
+
 `;

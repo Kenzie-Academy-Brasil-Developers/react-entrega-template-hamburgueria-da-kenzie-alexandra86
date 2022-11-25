@@ -19,8 +19,7 @@ export function CartAside({prods}) {
         <div className="total">
           <div className="prices">
             <p className="textTotal">Total</p>
-            <span className="textPrice">{prods.reduce((acc, act)=>
-            acc + act.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))}</span>
+            <span className="textPrice"></span>
           </div>
           <button type="button" className="btRemoveAll">Remover todos</button>
         </div>
