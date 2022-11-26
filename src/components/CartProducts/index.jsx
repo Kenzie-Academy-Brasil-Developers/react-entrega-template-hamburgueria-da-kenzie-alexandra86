@@ -1,17 +1,18 @@
+import{StyledCartProducts} from "./styles.js"
+
 export function CartProducts({element}){
 return(
 
-<ul>
-<li key={element.id}>
-        <img src={element.img} alt= {element.name} />
-        <div>
-          <h2>{element.name}</h2>
-          <span>{element.category}</span>
-          <p>{element.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>
-          <button type="button">Remover</button>
-        </div>
+  <StyledCartProducts>
+<li key={element.id} className="liCartProducts">
+        <img src={element.img} alt= {element.name} className="imgCartProducts"/>
+          <div className="divAreaInform">
+          <p className="titleCartProducts">{element.name}</p>
+          <span className="titleCategoryCartProducts">{element.category}</span>
+          </div>
+        <button type="button" className="btRemoveCart">Remover</button>
       </li>
-</ul>
+      </StyledCartProducts>
 
 
 )

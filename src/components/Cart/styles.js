@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledAsyde = styled.aside`
   max-width: 22.8125rem;
   width: 100%;
-    height: 33.125rem;
-    
+  height: 100%;
+    background-color:#F5F5F5;
 
   .divTitleCart {
     max-width: 24rem;
@@ -34,6 +34,8 @@ export const StyledAsyde = styled.aside`
     flex-direction:column;
     gap:0.3125rem;
   }
+
+
   .phraseOfEmptiness{
     font-family: "Inter", sans-serif;
     font-size: 1.125rem;
@@ -58,6 +60,7 @@ export const StyledAsyde = styled.aside`
     flex-direction: column;
     gap:16px;
     padding: 0.625rem
+    
   }
   .prices{
     max-width: 24rem;
@@ -65,6 +68,7 @@ export const StyledAsyde = styled.aside`
     display: flex;
     justify-content: space-between;
     padding: 0.625rem;
+    border-top: 2px solid #E0E0E0;
   }
   .textTotal{
     font-family: "Inter", sans-serif;
