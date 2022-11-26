@@ -1,7 +1,7 @@
 import { CartProducts } from "../CartProducts/index.jsx";
 import { StyledAsyde } from "./styles.js";
 
-export function CartAside({ cartProdcts, removeAllProductCart, index }) {
+export function CartAside({ cartProdcts, removeAllProductCart, index, removeProduct }) {
   return (
     <StyledAsyde>
       <aside>
@@ -17,7 +17,7 @@ export function CartAside({ cartProdcts, removeAllProductCart, index }) {
         ) : (
           <ul>
             {cartProdcts.map((elem) => (
-              <CartProducts key={elem.id} element={elem} indexProdcs={index} />
+              <CartProducts key={elem.id} element={elem} indexProdcs={index} removeProduct={removeProduct}/>
             ))}
           </ul>
         )}

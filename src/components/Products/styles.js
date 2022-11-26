@@ -10,10 +10,13 @@ export const StyleProduct = styled.li`
   display: flex;
   padding-bottom: 23px;
   
-  img {
+  img{
     padding: 15.12px 71px 0px 52px;
-    width: 19.375rem;
+    width: 18.4375rem;
     height: 10.75rem;
+    background: #F5F5F5;;
+    margin-bottom: 0.125rem;
+    object-fit:contain;
   }
   
   div {
@@ -65,6 +68,12 @@ button:hover{
   border: 0.125rem solid #93D7AF;
   color:#FFFFFF;
   background-color:#93D7AF;
+  }
+  
+  @media (max-width: 34.375rem) {
+    img{
+      width: 16.375rem;
+    }
   }
 
 `;

@@ -1,6 +1,6 @@
 import { StyledCartProducts } from "./styles.js";
 
-export function CartProducts({ element, indexProdcs, index }) {
+export function CartProducts({ element, indexProdcs, index, removeProduct}) {
   return (
     <StyledCartProducts>
       <li key={element.id} className="liCartProducts" indexProdcs={index}>
@@ -9,7 +9,7 @@ export function CartProducts({ element, indexProdcs, index }) {
           <p className="titleCartProducts">{element.name}</p>
           <span className="titleCategoryCartProducts">{element.category}</span>
         </div>
-        <button type="button" className="btRemoveCart">
+        <button type="button" className="btRemoveCart" onClick={()=> removeProduct(element)}>
           Remover
         </button>
       </li>

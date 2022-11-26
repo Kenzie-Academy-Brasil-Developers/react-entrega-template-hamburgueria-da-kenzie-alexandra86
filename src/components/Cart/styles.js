@@ -102,6 +102,8 @@ export const StyledAsyde = styled.aside`
   }
   @media (max-width: 34.375rem) {
     padding:0;
+    margin: 0 auto;
+    margin-top: 0.5rem;
   }
 
 `;

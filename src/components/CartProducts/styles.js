@@ -19,6 +19,7 @@ height:4.375rem;
 width:4.375rem;
 background-color: #E0E0E0;
 border-radius: 0.5rem;
+object-fit:contain;
 }
 
 .divInformCartProducts{

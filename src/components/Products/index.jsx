@@ -1,11 +1,11 @@
 
 import { StyleProduct } from "./styles.js";
 
-export function Product({element, addProductsCart}) {
+export function Product({element, addProductsCart, removeProduct}) {
   return (
     <StyleProduct>
-      <li key={element.id}>
-        <img src={element.img} alt= {element.name} />
+      <li key={element.id} removeProduct={removeProduct}>
+        <img src={element.img} alt= {element.name}/>
         <div>
           <h2>{element.name}</h2>
           <span>{element.category}</span>
