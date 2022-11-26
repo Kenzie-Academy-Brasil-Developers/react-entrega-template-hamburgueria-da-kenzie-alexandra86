@@ -5,62 +5,67 @@ import { ProductsList } from "../ProductsList/index.jsx";
 import { StyledMain } from "./style.js";
 import { useState } from "react";
 import { Product } from "../Products/index.jsx";
-import{CartAside} from "../Cart"
-
-
-
-
-
+import { CartAside } from "../Cart";
 
 export function MainProducts() {
-  
-  const [prods, setProds] = useState([])
-  const [searchProds, setSearchProds] = useState("")
-const [cartProdcts, setCartProducts] = useState([]) 
+  const [prods, setProds] = useState([]);
+  const [searchProds, setSearchProds] = useState("");
+  const [cartProdcts, setCartProducts] = useState([]);
 
-function addProductsCart(element){
-  const getAddProducts = prods.find(elem=> elem.id === element.id)
-  setCartProducts((previuosCart)=>{return [...previuosCart, getAddProducts]})
-}
+  function addProductsCart(element) {
+    const getAddProducts = prods.find((elem) => elem.id === element.id);
+    setCartProducts((previuosCart) => {
+      return [...previuosCart, getAddProducts];
+    });
+  }
 
-const showProducts = !searchProds
-? prods : prods.filter((element)=>element.name.toLowerCase().includes(searchProds.toLocaleLowerCase()))
+  const showProducts = !searchProds
+    ? prods
+    : prods.filter((element) =>
+        element.name.toLowerCase().includes(searchProds.toLocaleLowerCase())
+      );
 
-// function removeAddProductCart(element){
-//   const removeAddProducts = prods.find(elem=> elem.id === element.id)
+  function removeAllProductCart(id) {
+    const removeAddProdcts = cartProdcts.filter(
+      (elem) => cartProdcts.indexOf(elem) === id
+    );
+    setCartProducts(removeAddProdcts);
+  }
 
-// }
-
-
-  useEffect(()=>{
-
-    async function getProduct(){
-      try{
-  const response = await api.get("/products")
-  setProds(response.data)
-      }catch(err){
-        console.log(err)
+  useEffect(() => {
+    async function getProduct() {
+      try {
+        const response = await api.get("/products");
+        setProds(response.data);
+      } catch (err) {
+        console.log(err);
       }
-      
     }
-getProduct()
-  },[])
+    getProduct();
+  }, []);
 
   return (
     <>
-    <Header setSearchProds={setSearchProds}/>
-    <StyledMain>
-      <main>
-        <div className="divMain">
-          <ProductsList>
-            {
-              showProducts.map(elem => <Product key={elem.id} element={elem} addProductsCart={addProductsCart}/>)
-            }
-          </ProductsList>
-         <CartAside cartProdcts={cartProdcts}/>
-        </div>
-      </main>
-    </StyledMain>
+      <Header setSearchProds={setSearchProds} />
+      <StyledMain>
+        <main>
+          <div className="divMain">
+            <ProductsList>
+              {showProducts.map((elem) => (
+                <Product
+                  key={elem.id}
+                  element={elem}
+                  addProductsCart={addProductsCart}
+                />
+              ))}
+            </ProductsList>
+            <CartAside
+              cartProdcts={cartProdcts}
+              removeAllProductCart={removeAllProductCart}
+            />
+          </div>
+        </main>
+      </StyledMain>
     </>
   );
 }
