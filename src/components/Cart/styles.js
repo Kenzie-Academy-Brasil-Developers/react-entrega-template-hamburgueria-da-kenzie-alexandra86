@@ -100,7 +100,7 @@ export const StyledAsyde = styled.aside`
     border: 0.125rem solid #828282;
     color:#E0E0E0;
   }
-  @media (max-width: 34.375rem) {
+  @media (max-width: 67.5rem) {
     padding:0;
     margin: 0 auto;
     margin-top: 0.5rem;

@@ -12,7 +12,7 @@ export const StyledMain = styled.main`
     justify-content: space-around;
     gap: 4.0625rem;
   }
-  @media (max-width: 34.375rem) {
+  @media (max-width: 67.5rem) {
     .divMain{
   flex-direction:column;
   gap: 0;

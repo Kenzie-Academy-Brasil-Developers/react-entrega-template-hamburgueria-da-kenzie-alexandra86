@@ -11,7 +11,10 @@ export const StyleUl = styled.ul`
   flex-wrap: wrap;
   gap: 0.875rem;
 
-  @media (max-width: 34.375rem) {
+
+
+
+  @media (max-width: 67.5rem) {
     margin-top: 2rem;
   width: 100%;
   height: 22.625rem;
