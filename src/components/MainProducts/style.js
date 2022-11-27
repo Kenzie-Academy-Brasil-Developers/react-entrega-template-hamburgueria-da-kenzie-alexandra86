@@ -9,16 +9,14 @@ export const StyledMain = styled.main`
   .divMain {
     margin-top: 1.25rem;
     display: flex;
-    justify-content: space-around;
-    gap: 4.0625rem;
+    justify-content: space-between;
   }
   @media (max-width: 67.5rem) {
-    .divMain{
-  flex-direction:column;
-  gap: 0;
-  margin-top: 1.6875rem;
-  justify-content: center;
-}
-   
+    .divMain {
+      flex-direction: column;
+      gap: 0;
+      margin-top: 1.6875rem;
+      justify-content: center;
+    }
   }
 `;

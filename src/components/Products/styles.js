@@ -9,16 +9,16 @@ export const StyleProduct = styled.li`
   border-radius: 0.3125rem;
   display: flex;
   padding-bottom: 23px;
-  
-  img{
+
+  img {
     padding: 15.12px 71px 0px 52px;
     width: 18.4375rem;
     height: 10.75rem;
-    background: #F5F5F5;;
+    background: #f5f5f5;
     margin-bottom: 0.125rem;
-    object-fit:contain;
+    object-fit: contain;
   }
-  
+
   div {
     max-width: 16.375rem;
     width: 100%;
@@ -58,22 +58,20 @@ export const StyleProduct = styled.li`
     border: 0.125rem solid #27ae60;
     cursor: pointer;
   }
-:hover{
-  border:0.125rem solid #333333;
-
-}
-
-button:hover{
-  cursor:pointer;
-  border: 0.125rem solid #93D7AF;
-  color:#FFFFFF;
-  background-color:#93D7AF;
+  :hover {
+    border: 0.125rem solid #333333;
   }
-  
+
+  button:hover {
+    cursor: pointer;
+    border: 0.125rem solid #93d7af;
+    color: #ffffff;
+    background-color: #93d7af;
+  }
+
   @media (max-width: 34.375rem) {
-    img{
+    img {
       width: 16.375rem;
     }
   }
-
 `;

@@ -13,7 +13,6 @@ export const StyledHeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 0.6rem;
 
   @media (max-width: 34.375rem) {
     flex-direction: column;
@@ -48,7 +47,7 @@ export const StyledForm = styled.form`
     font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
-    border:none;
+    border: none;
   }
   :focus {
     border: 0.125rem solid #333333;
@@ -65,28 +64,25 @@ export const StyledForm = styled.form`
     border: 0.125rem solid #27ae60;
     cursor: pointer;
   }
-  button:hover{
-  cursor:pointer;
-  border: 0.125rem solid #93D7AF;
-  color:#FFFFFF;
-  background-color:#93D7AF;
+  button:hover {
+    cursor: pointer;
+    border: 0.125rem solid #93d7af;
+    color: #ffffff;
+    background-color: #93d7af;
   }
 
   @media (max-width: 34.375rem) {
-
-  .inputSearch{
-    outline: none;
-    border: none;
-    width: 62%;
-    margin-right:0;
-  }
-  width: 106%;
+    .inputSearch {
+      outline: none;
+      border: none;
+      width: 62%;
+      margin-right: 0;
+    }
+    width: 100%;
     height: 3.8125rem;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
-}
-
-`
+  }
+`;
