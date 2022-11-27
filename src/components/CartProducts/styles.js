@@ -69,7 +69,7 @@ export const StyledCartProducts = styled.li`
     padding: 3px;
     border-radius: 0.5rem;
   }
-  @media (max-width: 34.375rem) {
+  @media (max-width: 20rem) {
     .liCartProducts {
       width: 37%;
     }
