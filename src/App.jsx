@@ -1,4 +1,4 @@
-import "./App.css";
+
 import React from 'react';
 import {MainProducts} from "./components/MainProducts"
 
@@ -8,7 +8,7 @@ import {MainProducts} from "./components/MainProducts"
 function App() {
   return (
     
-    <div className="App">
+    <div>
       <MainProducts/>
      
     </div>

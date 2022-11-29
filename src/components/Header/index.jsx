@@ -5,9 +5,17 @@ import { StyledHeader, StyledHeaderDiv, StyledForm } from "./styles.js";
 
 export function Header({searchProds, setSearchProds}) {
 
-function PreventSearch(event){
+function PreventSearch(event, element){
 
   event.preventDefault()
+
+  const formSearch = {
+    img: element.img,
+    name:element.name,
+    category:element.category,
+    price:element.price,
+  }
+  setSearchProds =[...searchProds, formSearch]
 }
 
   return (
@@ -16,13 +24,11 @@ function PreventSearch(event){
         <div>
           <StyledHeaderDiv>
             <img src={imgLogo} alt="Logo Burguer Kenzie" />
-            <StyledForm>
-              <form onSubmit={PreventSearch}>
+            <StyledForm onSubmit={PreventSearch}>
                 <input value={searchProds} 
                 onChange={(event)=> setSearchProds(event.target.value)}
                 type="text" placeholder="Digitar Pesquisa" className="inputSearch" />
                 <button type="submit">Pesquisar</button>
-              </form>
             </StyledForm>
           </StyledHeaderDiv>
         </div>

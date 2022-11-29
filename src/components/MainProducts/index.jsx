@@ -16,11 +16,18 @@ export function MainProducts() {
 
   function addProductsCart(element) {
     const getAddProducts = prods.find((elem) => elem.id === element.id);
-    setCartProducts((previuosCart) => {
-      return [...previuosCart, getAddProducts];
-    });
-    toast.success("Produto adicionado com sucesso!");
-  }
+const noRepeatAddProducts = cartProdcts.some((elem)=>elem.id===getAddProducts.id)
+
+if(!noRepeatAddProducts){
+  setCartProducts((previuosCart) => {
+    return [...previuosCart, getAddProducts];
+  });
+  toast.success("Produto adicionado com sucesso!");
+}else{
+  toast.error("Este produto já foi adicionado!")
+}
+}
+    
 
   const showProducts = !searchProds
     ? prods
