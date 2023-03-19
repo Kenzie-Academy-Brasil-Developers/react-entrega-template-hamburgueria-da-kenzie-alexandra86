@@ -10,7 +10,7 @@
 
 <h2 font-family="pattaya">Descrição</h2><br>
 <p font-family="robotto" font-size="16px" line-height="34px" align="justify">
-O projeto representa uma aplicação de e-commerce de fast food, onde é possível o usuário comprar lanches e armazená-los num carrinho, enquanto compra outros ítens. Possui restrições, onde o usuário não pode adicionar o mesmo item no seu carrinho, quando isso acontece, o usuário é avisado com um toastfy. Há também avisos de que o item foi adicionado ou excluído do carrinho. Quando adcionado, o item é redirecionado ao carrinho e ao mesmo tempo o seu preço fica sendo calculado, juntamente dos outros itens existentes. E quando o carrinho está vazio, aparece a mensagem:"Sua sacola está vazia. Adicione itens."
+O projeto representa uma aplicação de e-commerce de fast food, onde é possível o usuário comprar lanches e armazená-los num carrinho, enquanto compra outros itens. Possui restrições, onde o usuário não pode adicionar o mesmo item no seu carrinho, quando isso acontece, o usuário é avisado com um toastfy. Há também avisos de que o item foi adicionado ou excluído do carrinho. Quando adcionado, o item é redirecionado ao carrinho e ao mesmo tempo o seu preço fica sendo calculado, juntamente dos outros itens existentes. E quando o carrinho está vazio, aparece a mensagem:"Sua sacola está vazia. Adicione itens."
 </p><br>
 
 <h2 font-family="pattaya">Libs utilizadas</h2><br>
